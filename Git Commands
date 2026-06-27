@@ -1,0 +1,284 @@
+1. Configure Git (First Time Only)
+
+Check your Git version:
+
+git --version
+
+Set your name:
+
+git config --global user.name "Your Name"
+
+Set your email:
+
+git config --global user.email "you@example.com"
+
+View all settings:
+
+git config --list
+2. Create a Repository
+
+Initialize a new Git repository:
+
+git init
+
+Clone an existing repository:
+
+git clone <repository-url>
+
+Example:
+
+git clone https://github.com/username/project.git
+3. Check Status
+
+See what has changed:
+
+git status
+4. Stage Changes
+
+Stage one file:
+
+git add index.html
+
+Stage all changes:
+
+git add .
+
+Stage everything:
+
+git add --all
+5. Commit Changes
+
+Commit staged changes:
+
+git commit -m "Add navbar"
+
+Commit tracked changes (not new files):
+
+git commit -a -m "Fix navbar"
+6. View History
+
+Show commit history:
+
+git log
+
+Short version:
+
+git log --oneline
+
+Graph view:
+
+git log --oneline --graph --all
+7. Branches
+
+List branches:
+
+git branch
+
+Create a branch:
+
+git branch feature/navbar
+
+Create and switch:
+
+git switch -c feature/navbar
+
+or
+
+git checkout -b feature/navbar
+
+Delete a branch:
+
+git branch -d feature/navbar
+
+Force delete:
+
+git branch -D feature/navbar
+8. Switch Branches
+
+Modern command:
+
+git switch main
+
+Older command:
+
+git checkout main
+9. Merge
+
+Merge a branch into the current branch:
+
+git merge feature/navbar
+10. Push to GitHub
+
+First push of a new branch:
+
+git push -u origin feature/navbar
+
+Later pushes:
+
+git push
+
+Push main:
+
+git push origin main
+11. Pull Changes
+
+Download and merge changes:
+
+git pull
+
+Pull from a specific branch:
+
+git pull origin main
+12. Fetch
+
+Download changes without merging:
+
+git fetch
+13. Remote Repositories
+
+View remotes:
+
+git remote -v
+
+Add a remote:
+
+git remote add origin <repository-url>
+
+Change the remote URL:
+
+git remote set-url origin <new-url>
+
+Remove a remote:
+
+git remote remove origin
+14. Differences
+
+See unstaged changes:
+
+git diff
+
+See staged changes:
+
+git diff --staged
+15. Undo Changes
+
+Discard changes in one file:
+
+git restore index.html
+
+Unstage a file:
+
+git restore --staged index.html
+
+Restore all files:
+
+git restore .
+16. Remove Files
+
+Remove from Git and disk:
+
+git rm file.txt
+
+Rename a file:
+
+git mv old.html new.html
+17. Stash
+
+Temporarily save work:
+
+git stash
+
+View stashes:
+
+git stash list
+
+Restore the latest stash:
+
+git stash pop
+18. Tags
+
+Create a tag:
+
+git tag v1.0
+
+Push tags:
+
+git push --tags
+19. Reset
+
+Soft reset:
+
+git reset --soft HEAD~1
+
+Mixed reset:
+
+git reset HEAD~1
+
+Hard reset (⚠️ deletes local changes):
+
+git reset --hard HEAD~1
+20. Revert
+
+Undo a commit without rewriting history:
+
+git revert <commit-hash>
+21. Clean
+
+Remove untracked files:
+
+git clean -f
+
+Remove untracked files and folders:
+
+git clean -fd
+22. Inspect
+
+Show current branch:
+
+git branch --show-current
+
+Show a commit:
+
+git show
+23. Helpful Everyday Workflow
+git status
+git pull origin main
+git switch -c feature/about
+git add .
+git commit -m "Add About section"
+git push -u origin feature/about
+
+Then open a Pull Request on GitHub.
+
+24. Team Collaboration Workflow
+main
+│
+├── feature/navbar
+├── feature/hero
+├── feature/about
+├── feature/contact
+
+Each teammate:
+
+Pulls the latest main.
+Creates a feature branch.
+Commits changes.
+Pushes the branch.
+Opens a Pull Request.
+Merges into main after review.
+Commands to Master First ⭐
+
+If you're working on your portfolio project, focus on these 12 commands:
+
+git clone
+git status
+git add .
+git commit -m "message"
+git pull
+git push
+git branch
+git switch
+git switch -c
+git merge
+git log --oneline
+git remote -v
