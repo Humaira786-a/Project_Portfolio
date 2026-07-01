@@ -92,13 +92,18 @@ Each team member works on a separate feature branch.
 Example:
 
 ```
-main
+mainPage
 │
 ├── feature/navbar
 ├── feature/hero
-├── feature/about
-├── feature/projects
-└── feature/contact
+├── feature/services
+├── feature/speacialSkill
+└── feature/AwsomePortfolio
+└── feature/Testmonales
+└── feature/favoriteClients
+└── feature/BlogPost
+└── feature/GetLetsUpdates
+└── feature/Footer
 ```
 
 Workflow:
@@ -116,7 +121,7 @@ Workflow:
 ## 👥 Team Members
 
 * Humai
-* Your Friend
+* Nasim Haidari
 
 ---
 
